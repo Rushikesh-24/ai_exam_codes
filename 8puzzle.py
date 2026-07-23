@@ -70,7 +70,7 @@ while open_list:
     open_list.sort(key=lambda x: x[1])
 
     current = open_list.pop(0)
-
+    # open_list= [] #hill climb
     if any(current[0] == x[0] for x in closed_list):
         continue
 
